@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+}
+.nav
+{
+    color: #fff;
+    height: 70px;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom-color:#333;
+    opacity: 0.7;
+}
+.logo
+{
+    height: auto;
+    width: 200px;
+}
+.nav ul{
+    list-style: none;
+    width: auto;
+    margin-top: -50px;
+    float: right;
+    margin-right: 10px;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav li a:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.container
+{
+    height:500px;
+    width: 100%;
+    margin-top: 40px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.writing
+{
+    height: 300px;
+    width: 30%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-bottom: 80px;
+}
+.para1
+{
+    color: #fff;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;    
+}
+.vid
+{
+    height: auto;
+    width: 70%;
+    /* background-color: yellow; */
+}
+.backvid
+{
+    position: relative;
+    right: -100px;
+    height: 500px;
+    width: 500px;
+}
+@keyframes slidefromleft
+{
+    from
+    {
+        transform: translateX(-300px);
+    }
+    to 
+    {
+        transform: translateX(0);
+    }
+}
+@keyframes slidefromright
+{
+    from
+    {
+        transform: translateX(300px);
+    }
+    to 
+    {
+        transform: translateX(0);
+    }
+}
+.writing
+{
+    animation: slidefromleft 1s  0.3s ;
+}
+@keyframes slidefromup
+{
+    from
+    {
+        transform: translateY(-300px);
+    }
+    to 
+    {
+        transform: translateY(0);
+    }
+}
+.nav ul
+{
+    animation: slidefromright 1.5s 0.5s  ;
+}
+.logoimg
+{
+    animation: slidefromleft 1.5s 0.3s ;
+}
+.entry
+{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.getuser
+{
+    height: 70px;
+    width: 250px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+    font-size: 30px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;   
+}
+.getuser a
+{
+    color: black;
+}
+.trust
+{
+    margin-top: 40px;
+    opacity: 0.7;
+    height: 200px;
+}
+.discription
+{
+    height: 300px;
+    width: auto;
+}
